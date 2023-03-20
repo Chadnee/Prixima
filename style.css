@@ -1,0 +1,251 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.list li a {
+    text-decoration: none;
+  }
+  .btn {
+   background-color:rgb(255, 106, 0);
+   width: 100px;
+ }
+  .btn:hover{
+    background-color: rgb(220,64, 4);
+  }
+  /*.list li:hover {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(255, 106, 0);
+    background-color:rgb(255, 106, 0) ;
+    color: white;
+    border-radius:50%;
+
+  }*/
+  
+  .list .icon {
+    color:white;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.255);
+    border-radius: 50%;
+    transition: .2s;
+    padding: 8px;
+    margin-right: 10px;
+    }
+    .icon:hover {
+    background-color: white;
+    color:rgba(239, 104, 8, 0.936) ;
+    }
+  .previous {
+    background: transparent;
+  }
+  .height-u{
+    
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/bg_banner1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+}
+.height-uu{
+    height: 85vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/official-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.height-uuu {
+  height: 85vh;
+    background: linear-gradient(rgba(11, 9, 9, 0.3), rgba(10, 6, 6, 0.3)), url(images/official-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+    .caro1 {
+      padding: 100px 200px;
+    }
+
+
+  .arrow {
+    width:70px;
+    height:38px;
+    border-radius:50%;
+    font-size:16px;
+    vertical-align: middle;
+    background:transparent;
+  }
+  .text {
+    position: relative;
+    bottom:450px;
+    font-weight:35px;
+    left:220px;
+  }
+  .craft{
+    font-size:25px;
+  }
+  .design{
+    font-size: 50px;
+    font-weight: 800px;
+    line-height:2.2ch;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+  .btn-first{
+    height:40px;
+    font-size: 20px;
+    background-color:rgb(255, 106, 0) ;
+    border:none ;
+    border-radius:8px;
+  }
+  .btn-scnd{
+    height:40px;
+    color: white;
+    font-size: 20px;
+    border:2px solid white;
+    border-radius:8px;
+    background: transparent;
+  }
+  .btn-scnd:hover {
+    background-color: white;
+    color: black;
+  }
+  .btn-carousel {
+    margin-bottom:200px;
+  }
+  .logo-grid {
+    display: grid;
+    gap:0;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-pic img {
+   border-radius:100% 50%;
+   transform: rotate(15deg);
+   border-bottom:30px solid rgb(255, 106, 0);
+   border-top:30px solid rgb(255, 106, 0);
+   position: relative;
+   bottom:20px;
+  }
+  
+  .logo img {
+    border-radius: 50%;
+
+  }
+
+  .clients {
+    height:45vh;
+    width: 100%;
+    background: linear-gradient(rgba(223, 95, 3, 0.936), rgba(185, 100, 66, 0.936)), url(images/bg_banner1.jpg);
+    background-size:cover;
+    background-position:center;
+
+  }
+   
+   
+  .col:hover {
+     box-shadow :1px 8px 20px grey;
+  }
+  .team img {
+     background-position: center;
+  }
+
+  .team {
+    position: relative;
+  }
+
+  .team-image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle{
+  transition: all 0.4s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  background: linear-gradient(rgba(255, 77, 41, 0.4), rgba(255, 77, 41, 0.4));
+}
+.team:hover .team-image{
+  opacity: 0.3;
+}
+.team:hover .middle{
+  opacity: 1;
+}
+
+.middle-icon {
+  color:black;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.255);
+  border-radius: 50%;
+  transition: .3s;
+  padding: 8px;
+  margin-right: 10px;
+}
+.middle-icon:hover {
+  background-color: white;
+  color:rgba(239, 104, 8, 0.936);
+}
+
+#review {
+  padding: var(--padding);
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/official-4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.review-img{
+  width: 100px;
+  height: 100px;
+}
+
+.web-design {
+  position:relative;
+  width: 120px;
+  height: 40px;
+  bottom:455px;
+  font-weight:400;
+  padding: 7px 5px;
+  left:25px;
+  border-radius:15px;
+  background-color:rgb(255, 106, 0);
+  color: white;
+}
+
+.footer {
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bg_banner1.jpg);
+   height:50vh;
+   width: 100%;
+   background-size: cover;
+   background-position:center ;
+   background-repeat:no-repeat ;
+  }
+
+  .icon {
+  color:white;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0.255);
+  border-radius: 50%;
+  transition: .2s;
+  padding: 8px;
+  margin-right: 10px;
+  }
+  .icon:hover {
+  background-color: white;
+  color:rgba(239, 104, 8, 0.936) ;
+  }
+  .copy-right{
+    padding-top:40px;
+  }

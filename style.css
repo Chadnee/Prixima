@@ -38,7 +38,6 @@ body {
     background: transparent;
   }
   .height-u{
-    
     height: 85vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/bg_banner1.jpg);
     background-position: center;
@@ -121,6 +120,7 @@ body {
   }
   .grid-pic img {
    border-radius:100% 50%;
+   width: 100%;
    transform: rotate(15deg);
    border-bottom:30px solid rgb(255, 106, 0);
    border-top:30px solid rgb(255, 106, 0);
@@ -148,6 +148,8 @@ body {
   }
   .team img {
      background-position: center;
+     width: 100%;
+     
   }
 
   .team {
@@ -159,7 +161,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: .3s ease;
   backface-visibility: hidden;
 }
 
@@ -198,18 +200,30 @@ body {
   color:rgba(239, 104, 8, 0.936);
 }
 
-#review {
+#review{
   padding: var(--padding);
   min-height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/official-4.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/bg_banner1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.review-img{
+.review-image{
   width: 100px;
-  height: 100px;
+  height: auto;
 }
+#review .carousel-inner{
+  padding: 10% 10%;
+}
+.review-gold{
+  color: var(--primary-color);
+}
+table td i{
+  color: var(--primary-color);
+}
+.logo-text {
+  
+ }
 
 .web-design {
   position:relative;
@@ -249,3 +263,57 @@ body {
   .copy-right{
     padding-top:40px;
   }
+
+  @media screen and (max-width:976px) {
+    .first-nav, .clients, .branding, .team-flex, .branding-part, .d-nav {
+      flex-direction: column;
+      width: 100%;
+      margin-left: auto;
+      margin-right: 0;
+      padding-left: 0;
+      gap: 0;
+      
+      
+    }
+    
+    .logo-text {
+     margin-left: auto;
+    }
+    .item-first {
+      text-align: center;
+    }
+    .slide-c{
+      margin-top: 0;
+    }
+    
+    .btn-toggler{
+      display: none;
+      
+    }
+    .clients {
+      height:80vh;
+      width: 100%;
+      background: linear-gradient(rgba(223, 95, 3, 0.936), rgba(185, 100, 66, 0.936)), url(images/bg_banner1.jpg);
+      background-size:cover;
+      background-position:center;
+  
+    }
+    .web-design {
+      position:relative;
+      width: 120px;
+      height: 40px;
+      bottom:400px;
+      font-weight:400;
+      padding: 7px 5px;
+      left:25px;
+      border-radius:15px;
+      background-color:rgb(255, 106, 0);
+      color: white;
+    }
+     
+  }
+  @media screen (min-width: 577px) and (max-width: 992 px) {
+    
+  }
+  
+  
